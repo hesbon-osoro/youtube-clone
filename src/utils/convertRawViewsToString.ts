@@ -1,6 +1,6 @@
 export const convertRawViewsToString = (
   labelValue: String,
-  isSub: false
+  isSub = false
 ): string => {
   // Nine Zeroes for Billions
   return Math.abs(Number(labelValue)) >= 1.0e9

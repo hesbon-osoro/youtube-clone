@@ -37,7 +37,7 @@ const YouTubeSlice = createSlice({
       state.nextPageToken = action.payload.nextPageToken;
     });
     builder.addCase(getSearchPageVideos.fulfilled, (state, action) => {
-      state.searchResults = action.payload.parsedData;
+      state.videos = action.payload.parsedData;
       state.nextPageToken = action.payload.nextPageToken;
     });
     builder.addCase(getVideoDetails.fulfilled, (state, action) => {

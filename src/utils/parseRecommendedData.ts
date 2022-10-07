@@ -4,7 +4,6 @@ import {
   convertRawViewsToString,
   parseVideoDuration,
   timeSince,
-  parseData,
 } from '.';
 import { Item, RecommendedVideos } from '../types';
 
@@ -33,7 +32,7 @@ export const parseRecommendedData = async (items: Item[], videoId: string) => {
     newItems.forEach((item, index) => {
       if (index >= videosData.length) return;
       if (videoId === item?.contentDetails?.upload?.videoId) return;
-      parseData.push({
+      parsedData.push({
         videoId: item.contentDetails.upload.videoId,
         videoTitle: item.snippet.title,
         videoThumbnail: item.snippet.thumbnails.medium.url,

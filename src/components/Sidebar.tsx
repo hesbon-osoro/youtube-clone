@@ -131,21 +131,6 @@ export default function Sidebar() {
         ))}
       </ul>
       <ul className="flex flex-col border-b-2 border-gray-700">
-        {mainLinks.map(({ icon, name }) => (
-          <li
-            key={name}
-            className={`pl-6 py-3 hover:bg-zinc-600 ${
-              name === 'Home' ? 'bg-slate-600' : ''
-            }`}
-          >
-            <a href="#" className="flex items-center gap-5">
-              {icon}
-              <span className="text-sm tracking-wider">{name}</span>
-            </a>
-          </li>
-        ))}
-      </ul>
-      <ul className="flex flex-col border-b-2 border-gray-700">
         {secondaryLinks.map(({ icon, name }) => (
           <li key={name} className="pl-6 py-3 hover:bg-zinc-600">
             <a href="#" className="flex items-center gap-5">

@@ -1,5 +1,7 @@
 # YouTube Clone
 
+[![Youtube](assets/youtube-clone.png)](https://react-youtube-clone-ts.netlify.app/)
+
 ## Technologies
 
 - React

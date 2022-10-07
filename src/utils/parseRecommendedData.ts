@@ -7,7 +7,7 @@ import {
 } from '.';
 import { Item, RecommendedVideos } from '../types';
 
-const API_KEY = process.env.YOUTUBE_DATA_API_KEY;
+const API_KEY = process.env.REACT_APP_YOUTUBE_DATA_API_KEY;
 
 export const parseRecommendedData = async (items: Item[], videoId: string) => {
   try {
